@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Resizer Pro</title>
+  <link rel="stylesheet" href="image-resizer.css">
+</head>
+
+<body>
+  <h1>🎯 Image Resizer Tool</h1>
+
+  <div class="container">
+    <!-- 🎯 Upload Image -->
+    <input type="file" id="uploadImage" accept="image/*" onchange="previewImage(event)">
+
+    <!-- 🎯 Width & Height Inputs -->
+    <input type="number" id="widthInput" placeholder="Enter Width (px)">
+    <input type="number" id="heightInput" placeholder="Enter Height (px)">
+
+    <!-- 🎯 Resize Button -->
+    <button onclick="resizeImage()">Resize Image</button>
+
+    <!-- 🎯 Preview Section -->
+    <div class="preview-box">
+      <h3>Original Image:</h3>
+      <img id="originalImage" class="preview-img">
+
+      <h3>After Resized:</h3>
+      <img id="resizedImage" class="preview-img">
+
+      <!-- ✅ Download Button -->
+      <a id="downloadBtn" download="resized-image.png" style="display: none;">⬇️ Download Image</a>
+    </div>
+  </div>
+
+  <script src="image-resizer.js"></script>
+</body>
+
+</html>

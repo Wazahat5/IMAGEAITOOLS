@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Remover Pro</title>
+  <link rel="stylesheet" href="bg-remover.css">
+</head>
+
+<body>
+  <h1>🎯 Background Remover Tool</h1>
+
+  <div class="container">
+    <input type="file" id="uploadImage" accept="image/*" onchange="previewImage(event)">
+    
+    <select id="formatSelect">
+      <option value="png">PNG</option>
+      <option value="jpg">JPG</option>
+      <option value="webp">WEBP</option>
+    </select>
+
+    <button onclick="removeBackground()">Remove Background</button>
+
+    <div class="preview-box">
+      <h3>Before:</h3>
+      <img id="originalImage" class="preview-img">
+
+      <h3>After (Background Removed):</h3>
+      <img id="removedBGImage" class="preview-img">
+
+      <a id="downloadBtn" download="bg-removed-image.png" style="display: none;">⬇️ Download Image</a>
+    </div>
+  </div>
+
+  <script src="bg-remover.js"></script>
+</body>
+
+</html>

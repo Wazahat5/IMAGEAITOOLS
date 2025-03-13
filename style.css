@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Style */
+body {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Input File Button */
+input[type="file"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: #111;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Preview Box */
+.preview-box {
+  margin-top: 20px;
+}
+
+.preview-img {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Floating Icons */
+.floating-icons img {
+  width: 80px;
+  position: absolute;
+  animation: float 5s infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Floating Tools */
+.floating-tools {
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  opacity: 0.9;
+  animation: float 2.5s infinite alternate ease-in-out;
+}
+
+.floating-tools img {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 8px 15px rgba(0, 255, 255, 0.7));
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(5px); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Tools Section */
+.tools-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.tool-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  width: 40%;
+  text-align: center;
+  box-shadow: 0 0 15px #00ffcc;
+  transition: all 0.3s ease-in-out;
+}
+
+.tool-card:hover {
+  transform: scale(1.05);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+nav a {
+  margin: 10px 20px;
+  text-decoration: none;
+  color: #00ffcc;
+}
+
+/* Animated Floating Icons */
+.floating-icon {
+  position: absolute;
+  width: 60px;
+  opacity: 0.1;
+  animation: floatIcons 10s infinite alternate ease-in-out;
+}
+
+.floating-icon:nth-child(1) {
+  top: -100px;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.floating-icon:nth-child(2) {
+  top: 200px;
+  left: 150px;
+  animation-delay: 2s;
+}
+
+.floating-icon:nth-child(3) {
+  top: -300px;
+  right: -100px;
+  animation-delay: 4s;
+}
+
+.floating-icon:nth-child(4) {
+  bottom: -100px;
+  left: -50px;
+  animation-delay: 6s;
+}
+
+/* Floating Animation */
+@keyframes floatIcons {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-40px) rotate(10deg); }
+  100% { transform: translateY(40px) rotate(-10deg); }
+}
+
+/* New Section for Big Animated Images */
+.animated-images {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.animated-images img {
+  width: 200px;
+  animation: bounce 3s infinite alternate ease-in-out;
+  filter: drop-shadow(0 0 20px #00ffcc);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
